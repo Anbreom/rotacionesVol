@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotaciones de voleibol</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="encabezado">
+      <p class="etiqueta">Sistema 5-1</p>
+      <h1>Rotaciones</h1>
+    </header>
+
+    <section class="controles" aria-label="Controles de la rotación">
+      <div class="grupo-control">
+        <h2>Rotación</h2>
+        <div class="botones rotaciones" role="group" aria-label="Elegir rotación">
+          <button class="boton-rotacion activo" type="button" data-rotacion="1">1</button>
+          <button class="boton-rotacion" type="button" data-rotacion="6">6</button>
+          <button class="boton-rotacion" type="button" data-rotacion="5">5</button>
+          <button class="boton-rotacion" type="button" data-rotacion="4">4</button>
+          <button class="boton-rotacion" type="button" data-rotacion="3">3</button>
+          <button class="boton-rotacion" type="button" data-rotacion="2">2</button>
+        </div>
+      </div>
+
+      <div class="grupo-control">
+        <h2>Momento</h2>
+        <div class="botones" role="group" aria-label="Elegir momento">
+          <button class="boton-momento activo" type="button" data-momento="Base">Base</button>
+          <button class="boton-momento" type="button" data-momento="Rece">Recepción</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="visor" aria-live="polite">
+      <div class="visor-cabecera">
+        <div>
+          <p class="etiqueta">Posición seleccionada</p>
+          <h2 id="titulo-rotacion">R1 · Base</h2>
+        </div>
+        <span id="indicador-momento" class="indicador">BASE</span>
+      </div>
+      <img id="imagen-rotacion" src="../imgs/R1_Base.png" alt="R1 en posición base">
+    </section>
+  </main>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
